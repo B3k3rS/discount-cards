@@ -6,7 +6,7 @@
 }
 
 section {
-    max-width: 1200px;
+    max-width: 1260px;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -15,21 +15,22 @@ section {
 
 section > article:nth-child(3n-1)
 {
-    background-image: linear-gradient(45deg, #FCC095, #F88EAB);
+    background-image: linear-gradient(45deg, #FCC095, #fd8095);
 }
 
 section > article:nth-child(3n-2) {
-    background-image: linear-gradient(45deg, #8CC8F4, #398DD1);
+    background-image: linear-gradient(45deg, #8CC8F4, #138be0);
 }
 
 section > article:nth-child(3n) {
-    background-image: linear-gradient(45deg, #7CD9D1, #3AD4C0);
+    background-image: linear-gradient(45deg, #7CD9D1, #07c2a9);
 }
+
 
 .card {
     text-align: left;
     display: inline-block;
-    width: 380px;
+    width: 400px;
     height: 240px;
     margin: 10px 5px;
     border-radius: 5px;
@@ -40,23 +41,52 @@ section > article:nth-child(3n) {
     z-index: -1;
 }
 
-.card > h2 {
+.content {
+    z-index: 1;
+}
+
+.content > h2 {
     padding-top: 15px;
     font-size: 32px;
 }
 
-.card > h3 {
+.content > h3 {
     font-size: 18px;
+    font-weight: normal;
+    text-transform: capitalize;
 }
 
-.card > h4 {
+.content > h4 {
     position: absolute;
     bottom: 40px;
     left: 35px;
+    
 }
 
-.card > img {
+.content > img {
     position: absolute;
     top: 40px;
     right: 35px;
+    max-width: 20px;
+    min-height: 20px;
+}
+
+
+.circle {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    opacity: .2;
+}
+
+.card > div.circle:nth-child(1) {
+    top: -30px;
+    right: -70px;
+}
+
+.card > div.circle:nth-child(2) {
+    bottom: -100px;
+    right: -20px;
 }
